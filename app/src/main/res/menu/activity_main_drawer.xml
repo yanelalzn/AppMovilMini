@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_categoria"
+            android:icon="@drawable/categoria"
+            android:title="@string/valfragcategoria" />
+        <item
+            android:id="@+id/nav_productos"
+            android:icon="@drawable/prod"
+            android:title="@string/valfragproductos"
+            android:visibility="invisible" />
+
+        <item
+            android:id="@+id/carritoFragment"
+            android:icon="@drawable/car"
+            android:title="Compras" />
+
+        <item android:title="Cuenta">
+        <menu>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/perfil"
+            android:title="@string/valfragperfil" />
+        <item
+            android:id="@+id/loginActivity"
+            android:icon="@drawable/close"
+            android:title="Cerrar Sesión" />
+    </group>
+        </menu>
+        </item>
+
+    </group>
+</menu>

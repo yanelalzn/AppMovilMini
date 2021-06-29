@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_categoria">
+    <fragment
+        android:id="@+id/nav_categoria"
+        android:name="edu.pe.idat.appminimarket.CategoriaFragment"
+        android:label="@string/valfragcategoria"
+        tools:layout="@layout/fragment_categoria" />
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="edu.pe.idat.appminimarket.PerfilFragment"
+        android:label="@string/valfragperfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/nav_productos"
+        android:name="edu.pe.idat.appminimarket.Producto1Fragment"
+        android:label="@string/valfragproductos"
+        tools:layout="@layout/fragment_producto1" />
+    <fragment
+        android:id="@+id/nav_carrito"
+        android:name="edu.pe.idat.appminimarket.CarritoFragment"
+        android:label="Carrito"
+        tools:layout="@layout/fragment_carrito"/>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="edu.pe.idat.appminimarket.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+</navigation>
